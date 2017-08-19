@@ -1,6 +1,7 @@
 @import (less) "../../node_modules/font-awesome/css/font-awesome.css";
 @import "variables";
 @import "base";
+@import "buttons";
 
 
 // hero ==============
@@ -66,32 +67,27 @@
   }
 }
 
-.btn {
-  text-transform: uppercase;
-  border-radius: 0;
-  transition: 0.1s;
-  letter-spacing: 0.2em;
-  line-height: normal;
-  padding: 0.8em 1.5em;
-  box-shadow: none;
+.book-paragrah:first-letter {
+  float: left;
+  color: @colour-gold;
+  font-size: 3.3em;
+  font-style: normal;
+  line-height: 1em;
+  padding-top: 0;
+  padding-right: 12px;
+  padding-left: 3px;
+  font-family: "Ovo", sans-serif;
 }
 
-.btn-default {
-  &, &:active {
-    color: @colour-white;
-    border: 2px solid @colour-white;
-    background: transparent;
+.main-content {
+  max-width: 1200px;
+}
+
+.teaser {
+  > div {
+    padding-top: 80px;
   }
-  &:focus, &:focus:active {
-    color: @colour-white;
-    border: 2px solid @colour-white;
-    background: transparent;
-    outline: 0;
-    box-shadow: 0 0 3px 3px rgba(255, 255, 255, 0.5);
-  }
-  &:hover, &:hover:active {
-    color: @colour-white;
-    border-color: @colour-gold;
-    background-color: @colour-gold;
-  }
+}
+.teaser-read-section {
+  .temporary-bg();
 }

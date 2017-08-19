@@ -2351,6 +2351,35 @@ h5,
 h6 {
   font-family: 'Ovo', serif;
 }
+.btn {
+  text-transform: uppercase;
+  border-radius: 0;
+  transition: 0.1s;
+  letter-spacing: 0.2em;
+  line-height: normal;
+  padding: 0.8em 1.5em;
+  box-shadow: none;
+}
+.btn-default,
+.btn-default:active {
+  color: #fff;
+  border: 2px solid #fff;
+  background: transparent;
+}
+.btn-default:focus,
+.btn-default:focus:active {
+  color: #fff;
+  border: 2px solid #fff;
+  background: transparent;
+  outline: 0;
+  box-shadow: 0 0 3px 3px rgba(255, 255, 255, 0.5);
+}
+.btn-default:hover,
+.btn-default:hover:active {
+  color: #fff;
+  border-color: #BF9456;
+  background-color: #BF9456;
+}
 .hero {
   background: #93cede;
   /* Old browsers */
@@ -2419,32 +2448,32 @@ h6 {
     white-space: nowrap;
   }
 }
-.btn {
-  text-transform: uppercase;
-  border-radius: 0;
-  transition: 0.1s;
-  letter-spacing: 0.2em;
-  line-height: normal;
-  padding: 0.8em 1.5em;
-  box-shadow: none;
+.book-paragrah:first-letter {
+  float: left;
+  color: #BF9456;
+  font-size: 3.3em;
+  font-style: normal;
+  line-height: 1em;
+  padding-top: 0;
+  padding-right: 12px;
+  padding-left: 3px;
+  font-family: "Ovo", sans-serif;
 }
-.btn-default,
-.btn-default:active {
-  color: #fff;
-  border: 2px solid #fff;
-  background: transparent;
+.main-content {
+  max-width: 1200px;
 }
-.btn-default:focus,
-.btn-default:focus:active {
-  color: #fff;
-  border: 2px solid #fff;
-  background: transparent;
-  outline: 0;
-  box-shadow: 0 0 3px 3px rgba(255, 255, 255, 0.5);
+.teaser > div {
+  padding-top: 80px;
 }
-.btn-default:hover,
-.btn-default:hover:active {
-  color: #fff;
-  border-color: #BF9456;
-  background-color: #BF9456;
+.teaser-read-section {
+  background: #93cede;
+  /* Old browsers */
+  background: -moz-linear-gradient(-45deg, #93cede 0%, #75bdd1 41%, #49a5bf 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(-45deg, #93cede 0%, #75bdd1 41%, #49a5bf 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(135deg, #93cede 0%, #75bdd1 41%, #49a5bf 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#93cede', endColorstr='#49a5bf', GradientType=1);
+  /* IE6-9 fallback on horizontal gradient */
 }

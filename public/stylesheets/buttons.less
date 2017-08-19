@@ -1,0 +1,30 @@
+
+.btn {
+  text-transform: uppercase;
+  border-radius: 0;
+  transition: 0.1s;
+  letter-spacing: 0.2em;
+  line-height: normal;
+  padding: 0.8em 1.5em;
+  box-shadow: none;
+}
+
+.btn-default {
+  &, &:active {
+    color: @colour-white;
+    border: 2px solid @colour-white;
+    background: transparent;
+  }
+  &:focus, &:focus:active {
+    color: @colour-white;
+    border: 2px solid @colour-white;
+    background: transparent;
+    outline: 0;
+    box-shadow: 0 0 3px 3px @colour-white-50;
+  }
+  &:hover, &:hover:active {
+    color: @colour-white;
+    border-color: @colour-gold;
+    background-color: @colour-gold;
+  }
+}

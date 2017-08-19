@@ -13,3 +13,4 @@ docker-compose.yml
 .idea
 public/stylesheets/base.css
 public/stylesheets/variables.css
+public/stylesheets/buttons.css
