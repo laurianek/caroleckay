@@ -2574,6 +2574,12 @@ h6 {
   margin-top: 80px;
   margin-bottom: 80px;
 }
+.characters-info .carousel-indicators li {
+  border-color: #BF9456;
+}
+.characters-info .carousel-indicators .active {
+  background-color: #BF9456;
+}
 .characters-info .carousel-control {
   background: none;
   color: #515151;
@@ -2583,7 +2589,7 @@ h6 {
   font-family: FontAwesome;
 }
 .character-info {
-  padding: 80px;
+  padding: 40px 30px;
   background-color: #fff;
 }
 .character-info h2 {
@@ -2594,6 +2600,11 @@ h6 {
   padding-right: 6px;
   padding-left: 6px;
   line-height: 1;
+}
+@media (min-width: 400px) {
+  .character-info {
+    padding: 80px;
+  }
 }
 .footer {
   background: #515151;

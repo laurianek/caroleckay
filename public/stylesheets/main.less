@@ -145,6 +145,15 @@
   margin-top: @space-between * 2;
   margin-bottom: @space-between * 2;
 
+  .carousel-indicators {
+    li {
+      border-color: @colour-gold;
+    }
+    .active {
+      background-color: @colour-gold;
+    }
+  }
+
   .carousel-control {
     background: none;
     color: @colour-black;
@@ -155,7 +164,7 @@
   }
 }
 .character-info {
-  padding: 80px;
+  padding: 40px 30px;
   background-color: @colour-white;
 
   h2 {
@@ -166,6 +175,9 @@
     padding-right: 6px;
     padding-left: 6px;
     line-height: 1;
+  }
+  @media (min-width: 400px) {
+    padding: 80px;
   }
 }
 
