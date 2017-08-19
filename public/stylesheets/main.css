@@ -2335,7 +2335,7 @@
   overflow: visible;
   clip: auto;
 }
-/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#93cede+0,75bdd1+41,49a5bf+100;Blue+3D+%235 */
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#2f8299+0,2c7184+41,255a69+100 */
 body {
   font-family: 'Source Sans Pro', sans-serif;
   color: #515151;
@@ -2350,6 +2350,9 @@ h4,
 h5,
 h6 {
   font-family: 'Ovo', serif;
+}
+.colour-gold {
+  color: #BF9456;
 }
 .btn {
   text-transform: uppercase;
@@ -2380,16 +2383,40 @@ h6 {
   border-color: #BF9456;
   background-color: #BF9456;
 }
+.btn-default:hover:focus,
+.btn-default:hover:focus:active {
+  box-shadow: 0 0 3px 3px rgba(191, 148, 86, 0.5);
+}
+.btn-primary,
+.btn-primary:active {
+  color: #515151;
+  border: 2px solid #515151;
+  background: transparent;
+}
+.btn-primary:focus,
+.btn-primary:focus:active {
+  color: #515151;
+  border: 2px solid #515151;
+  background: transparent;
+  outline: 0;
+  box-shadow: 0 0 3px 3px rgba(191, 148, 86, 0.5);
+}
+.btn-primary:hover,
+.btn-primary:hover:active {
+  color: #fff;
+  border-color: #BF9456;
+  background-color: #BF9456;
+}
 .hero {
-  background: #93cede;
+  background: #2f8299;
   /* Old browsers */
-  background: -moz-linear-gradient(-45deg, #93cede 0%, #75bdd1 41%, #49a5bf 100%);
+  background: -moz-linear-gradient(-45deg, #2f8299 0%, #2c7184 41%, #255a69 100%);
   /* FF3.6-15 */
-  background: -webkit-linear-gradient(-45deg, #93cede 0%, #75bdd1 41%, #49a5bf 100%);
+  background: -webkit-linear-gradient(-45deg, #2f8299 0%, #2c7184 41%, #255a69 100%);
   /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(135deg, #93cede 0%, #75bdd1 41%, #49a5bf 100%);
+  background: linear-gradient(135deg, #2f8299 0%, #2c7184 41%, #255a69 100%);
   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#93cede', endColorstr='#49a5bf', GradientType=1);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#2f8299', endColorstr='#255a69', GradientType=1);
   /* IE6-9 fallback on horizontal gradient */
   position: relative;
 }
@@ -2459,21 +2486,45 @@ h6 {
   padding-left: 3px;
   font-family: "Ovo", sans-serif;
 }
-.main-content {
-  max-width: 1200px;
+.teaser {
+  background: #2f8299;
+  /* Old browsers */
+  background: -moz-linear-gradient(-45deg, #2f8299 0%, #2c7184 41%, #255a69 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(-45deg, #2f8299 0%, #2c7184 41%, #255a69 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(135deg, #2f8299 0%, #2c7184 41%, #255a69 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#2f8299', endColorstr='#255a69', GradientType=1);
+  /* IE6-9 fallback on horizontal gradient */
 }
 .teaser > div {
-  padding-top: 80px;
+  background-color: #fff;
+  position: relative;
 }
-.teaser-read-section {
-  background: #93cede;
-  /* Old browsers */
-  background: -moz-linear-gradient(-45deg, #93cede 0%, #75bdd1 41%, #49a5bf 100%);
-  /* FF3.6-15 */
-  background: -webkit-linear-gradient(-45deg, #93cede 0%, #75bdd1 41%, #49a5bf 100%);
-  /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(135deg, #93cede 0%, #75bdd1 41%, #49a5bf 100%);
-  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#93cede', endColorstr='#49a5bf', GradientType=1);
-  /* IE6-9 fallback on horizontal gradient */
+.teaser-info-section {
+  padding: 80px;
+}
+.teaser-info-section > h1 {
+  margin-bottom: 40px;
+}
+.teaser-info-section .lead {
+  font-style: italic;
+}
+.teaser-info-section p {
+  margin-bottom: 40px;
+}
+.teaser-read-now {
+  position: absolute;
+  left: 112.5%;
+  background: white;
+  padding: 40px;
+  width: 75%;
+  top: 50%;
+  text-align: center;
+  transform: translate(0%, -50%);
+}
+.teaser-read-now h2 {
+  margin-top: 0;
+  margin-bottom: 20px;
 }

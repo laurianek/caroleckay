@@ -1,3 +1,4 @@
+@import "variables";
 
 .btn {
   text-transform: uppercase;
@@ -21,6 +22,29 @@
     background: transparent;
     outline: 0;
     box-shadow: 0 0 3px 3px @colour-white-50;
+  }
+  &:hover, &:hover:active {
+    color: @colour-white;
+    border-color: @colour-gold;
+    background-color: @colour-gold;
+  }
+  &:hover:focus, &:hover:focus:active {
+    box-shadow: 0 0 3px 3px @colour-gold-50;
+  }
+}
+
+.btn-primary {
+  &, &:active {
+    color: @colour-black;
+    border: 2px solid @colour-black;
+    background: transparent;
+  }
+  &:focus, &:focus:active {
+    color: @colour-black;
+    border: 2px solid @colour-black;
+    background: transparent;
+    outline: 0;
+    box-shadow: 0 0 3px 3px @colour-gold-50;
   }
   &:hover, &:hover:active {
     color: @colour-white;

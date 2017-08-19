@@ -42,7 +42,7 @@
 
   p {
     line-height: 32.4px;
-    margin-bottom: 40px;
+    margin-bottom: @space-between;
   }
 
   @media (min-width: @medium-screen) {
@@ -67,6 +67,7 @@
   }
 }
 
+// second section
 .book-paragrah:first-letter {
   float: left;
   color: @colour-gold;
@@ -80,14 +81,43 @@
 }
 
 .main-content {
-  max-width: 1200px;
+  //max-width: 1200px;
 }
 
 .teaser {
+  .temporary-bg();
   > div {
-    padding-top: 80px;
+    background-color: @colour-white;
+    position: relative;
   }
 }
-.teaser-read-section {
-  .temporary-bg();
+
+.teaser-info-section {
+  padding: 80px;
+
+  > h1 {
+    margin-bottom: @space-between;
+  }
+  .lead {
+    font-style: italic;
+  }
+  p {
+    margin-bottom: @space-between;
+  }
+}
+
+.teaser-read-now {
+  position: absolute;
+  left: 112.5%;
+  background: white;
+  padding: 40px;
+  width: 75%;
+  top: 50%;
+  text-align: center;
+  transform: translate(0%, -50%);
+
+  h2 {
+    margin-top: 0;
+    margin-bottom: 20px;
+  }
 }
