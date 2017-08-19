@@ -5,35 +5,93 @@
 
 // hero ==============
 .hero {
-  height: 100vh;
   .temporary-bg();
   position: relative;
+  @media (min-width: @medium-screen) {
+    height: 100vh;
+    max-height: 800px;
+  }
 }
 
 .book-cover-img {
-  float: right;
-  width: 50%;
+  width: 100%;
+  @media (min-width: @medium-screen) {
+    width: 50%;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translate(0%, -50%);
+  }
 
   img {
     max-width: 500px;
+    width: 100%;
   }
 }
 
 .hero-marketing-copy {
-  width: 50%;
-  padding: 20px 20px 20px 40px;
-  position: absolute;
-  bottom: 20px;
   color: @colour-white;
+  padding: 10px;
+  text-align: center;
 
   h1 {
-    font-size: 55px;
-    line-height: 70px;
+    line-height: 1.2;
+    font-size: 45px;
   }
 
   p {
-    font-size: 18px;
     line-height: 32.4px;
     margin-bottom: 40px;
+  }
+
+  @media (min-width: @medium-screen) {
+    text-align: left;
+    width: 50%;
+    padding: 20px 20px 20px 40px;
+    position: absolute;
+    bottom: 20px;
+
+    h1 {
+      font-size: 55px;
+    }
+  }
+}
+
+.hero-btn-wrap {
+  .btn {
+    margin-bottom: 10px;
+  }
+  @media (min-width: @medium-screen) {
+    white-space: nowrap;
+  }
+}
+
+.btn {
+  text-transform: uppercase;
+  border-radius: 0;
+  transition: 0.1s;
+  letter-spacing: 0.2em;
+  line-height: normal;
+  padding: 0.8em 1.5em;
+  box-shadow: none;
+}
+
+.btn-default {
+  &, &:active {
+    color: @colour-white;
+    border: 2px solid @colour-white;
+    background: transparent;
+  }
+  &:focus, &:focus:active {
+    color: @colour-white;
+    border: 2px solid @colour-white;
+    background: transparent;
+    outline: 0;
+    box-shadow: 0 0 3px 3px rgba(255, 255, 255, 0.5);
+  }
+  &:hover, &:hover:active {
+    color: @colour-white;
+    border-color: @colour-gold;
+    background-color: @colour-gold;
   }
 }

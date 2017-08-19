@@ -2339,6 +2339,9 @@
 body {
   font-family: 'Source Sans Pro', sans-serif;
   color: #515151;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 18px;
 }
 h1,
 h2,
@@ -2349,7 +2352,6 @@ h6 {
   font-family: 'Ovo', serif;
 }
 .hero {
-  height: 100vh;
   background: #93cede;
   /* Old browsers */
   background: -moz-linear-gradient(-45deg, #93cede 0%, #75bdd1 41%, #49a5bf 100%);
@@ -2362,26 +2364,87 @@ h6 {
   /* IE6-9 fallback on horizontal gradient */
   position: relative;
 }
+@media (min-width: 640px) {
+  .hero {
+    height: 100vh;
+    max-height: 800px;
+  }
+}
 .book-cover-img {
-  float: right;
-  width: 50%;
+  width: 100%;
+}
+@media (min-width: 640px) {
+  .book-cover-img {
+    width: 50%;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translate(0%, -50%);
+  }
 }
 .book-cover-img img {
   max-width: 500px;
+  width: 100%;
 }
 .hero-marketing-copy {
-  width: 50%;
-  padding: 20px 20px 20px 40px;
-  position: absolute;
-  bottom: 20px;
   color: #fff;
+  padding: 10px;
+  text-align: center;
 }
 .hero-marketing-copy h1 {
-  font-size: 55px;
-  line-height: 70px;
+  line-height: 1.2;
+  font-size: 45px;
 }
 .hero-marketing-copy p {
-  font-size: 18px;
   line-height: 32.4px;
   margin-bottom: 40px;
+}
+@media (min-width: 640px) {
+  .hero-marketing-copy {
+    text-align: left;
+    width: 50%;
+    padding: 20px 20px 20px 40px;
+    position: absolute;
+    bottom: 20px;
+  }
+  .hero-marketing-copy h1 {
+    font-size: 55px;
+  }
+}
+.hero-btn-wrap .btn {
+  margin-bottom: 10px;
+}
+@media (min-width: 640px) {
+  .hero-btn-wrap {
+    white-space: nowrap;
+  }
+}
+.btn {
+  text-transform: uppercase;
+  border-radius: 0;
+  transition: 0.1s;
+  letter-spacing: 0.2em;
+  line-height: normal;
+  padding: 0.8em 1.5em;
+  box-shadow: none;
+}
+.btn-default,
+.btn-default:active {
+  color: #fff;
+  border: 2px solid #fff;
+  background: transparent;
+}
+.btn-default:focus,
+.btn-default:focus:active {
+  color: #fff;
+  border: 2px solid #fff;
+  background: transparent;
+  outline: 0;
+  box-shadow: 0 0 3px 3px rgba(255, 255, 255, 0.5);
+}
+.btn-default:hover,
+.btn-default:hover:active {
+  color: #fff;
+  border-color: #BF9456;
+  background-color: #BF9456;
 }
