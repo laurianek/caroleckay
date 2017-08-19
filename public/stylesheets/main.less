@@ -138,3 +138,54 @@
     text-align: left;
   }
 }
+
+
+// section 3 ==============
+.characters-info {
+  margin-top: @space-between * 2;
+  margin-bottom: @space-between * 2;
+
+  .carousel-control {
+    background: none;
+    color: @colour-black;
+
+    .icon-prev, .icon-next {
+      font-family: FontAwesome;
+    }
+  }
+}
+.character-info {
+  padding: 80px;
+  background-color: @colour-white;
+
+  h2 {
+    text-align: center;
+  }
+  .book-paragrah:first-letter {
+    font-size: 45px;
+    padding-right: 6px;
+    padding-left: 6px;
+    line-height: 1;
+  }
+}
+
+// footer =======
+.footer {
+  background: @colour-black;
+  color: @colour-white;
+  text-align: center;
+  padding-bottom: @space-between / 2;
+
+  h2 {
+    margin-bottom: @space-between;
+  }
+  .social-icon {
+    &, &:hover {
+      color: white;
+      font-size: 30px;
+      margin-left: 5px;
+      margin-right: 5px;
+
+    }
+  }
+}

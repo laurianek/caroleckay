@@ -2342,6 +2342,16 @@ body {
   font-weight: 300;
   font-style: normal;
   font-size: 18px;
+  background: #2f8299;
+  /* Old browsers */
+  background: -moz-linear-gradient(-45deg, #2f8299 0%, #2c7184 41%, #255a69 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(-45deg, #2f8299 0%, #2c7184 41%, #255a69 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(135deg, #2f8299 0%, #2c7184 41%, #255a69 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#2f8299', endColorstr='#255a69', GradientType=1);
+  /* IE6-9 fallback on horizontal gradient */
 }
 h1,
 h2,
@@ -2559,4 +2569,45 @@ h6 {
   .teaser-btn-wrap {
     text-align: left;
   }
+}
+.characters-info {
+  margin-top: 80px;
+  margin-bottom: 80px;
+}
+.characters-info .carousel-control {
+  background: none;
+  color: #515151;
+}
+.characters-info .carousel-control .icon-prev,
+.characters-info .carousel-control .icon-next {
+  font-family: FontAwesome;
+}
+.character-info {
+  padding: 80px;
+  background-color: #fff;
+}
+.character-info h2 {
+  text-align: center;
+}
+.character-info .book-paragrah:first-letter {
+  font-size: 45px;
+  padding-right: 6px;
+  padding-left: 6px;
+  line-height: 1;
+}
+.footer {
+  background: #515151;
+  color: #fff;
+  text-align: center;
+  padding-bottom: 20px;
+}
+.footer h2 {
+  margin-bottom: 40px;
+}
+.footer .social-icon,
+.footer .social-icon:hover {
+  color: white;
+  font-size: 30px;
+  margin-left: 5px;
+  margin-right: 5px;
 }
